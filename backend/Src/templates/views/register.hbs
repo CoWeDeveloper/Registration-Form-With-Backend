@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+ {{>navbar}}
+    <h1>Welcome to the registration page, how are you ?</h1>
+    <div class="container-md">
+
+        <form action="register" method="POST" class="row g-3 box">
+            <div class="mb-3">
+                <div>First Name</div>
+                <input name="FirstName" class="form-control" type="text" placeholder="type your first name here">
+                <div>Last Name</div>
+                <input name="LastName" class="form-control" type="text" placeholder="type your last name here">
+
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input name="Email" type="email" class="form-control"
+                    id="exampleFormControlInput1" placeholder="type your Email here">
+
+                <div>Age</div>
+                <input name="Age" class="form-control" type="text" placeholder="type your age here">
+                <div>Department</div>
+                <input name="Department" class="form-control" type="text" placeholder="type your Department here">
+            </div>
+            <div>
+                <label><input name="gender" value="Male" type="radio">Male </label> <label><input name="gender"
+                        value="Female" type="radio">Female</label>
+            </div>
+
+
+
+
+            <div class="col-auto">
+                <label for="inputPassword2" class="visually-hidden">Password</label>
+                <input name="password" type="password" class="form-control" id="inputPassword2" placeholder="Password">
+            </div>
+
+            <div class="col-auto">
+                <label for="inputPassword2" class="visually-hidden">Confirm Password</label>
+                <input name="confirmpassword" type="password" class="form-control" 
+                    placeholder="Confirm Password">
+            </div>
+            <div class="col-auto">
+                <button type="submit" value="register" class="btn btn-primary mb-3">Login in</button>
+            </div>
+        </form>
+
+
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</html>
